@@ -1,0 +1,15 @@
+[package]
+name = "xml-lint"
+version = "0.1.0"
+edition = "2021"
+description = "CLI for linting and formatting XML files"
+license = "MIT"
+
+[dependencies]
+anyhow = "1.0.97"
+clap = { version = "4.5.4", features = ["derive"] }
+xmlem = "0.3.3"
+
+[lints.clippy]
+pedantic = "warn"
+nursery = "warn"
